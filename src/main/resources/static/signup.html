@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+        /* CSS styling */
+        body {
+            background-image: url('https://images.wallpaperscraft.com/image/single/barbell_gym_sport_216017_1024x600.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #signup-form {
+            background-color: #2c3e50; /* لون أسود */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* ظل */
+            color: white; /* لون النص أبيض */
+        }
+        #signup-form h2 {
+            margin-bottom: 20px;
+        }
+        #signup-form input[type="text"],
+        #signup-form input[type="email"],
+        #signup-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        #signup-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff8c00; /* لون برتقالي */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #signup-form input[type="submit"]:hover {
+            background-color: #e67e22; /* لون برتقالي غامق عند التحويم */
+        }
+        #signup-form p {
+            margin-top: 20px;
+            color: #fff; /* لون النص أبيض */
+        }
+        #signup-form a {
+            color: #ff8c00; /* لون برتقالي */
+            text-decoration: none;
+        }
+        #signup-form a:hover {
+            color: #e67e22; /* لون برتقالي غامق عند التحويم */
+        }
+    </style>
+</head>
+<body>
+<div id="signup-form">
+  <h2>Sign Up</h2>
+  <form action="index.html" method="post">
+    <input type="text" id="username" name="username" placeholder="Username"><br>
+    <input type="email" id="email" name="email" placeholder="Email"><br>
+    <input type="password" id="password" name="password" placeholder="Password"><br>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password"><br><br>
+    <input type="submit" value="Sign Up">
+  </form>
+  <p>Already have an account? <a href="signin.html">Sign In</a></p>
+</div>
+</body>
+</html>
